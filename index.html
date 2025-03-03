@@ -40,6 +40,7 @@
         <div class="nav-links">
             <a href="#home" class="nav-link" data-text="Home">Home</a>
             <a href="#about" class="nav-link" data-text="About">About</a>
+            <a href="#purchase" class="nav-link" data-text="Purchase">Purchase</a>
             <a href="#gallery" class="nav-link" data-text="Gallery">Gallery</a>
             <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
         </div>
@@ -54,9 +55,9 @@
         </div>
     </section>
 
-    <section id="gallery" class="gallery">
+    <section id="about" class="about">
         <div class="section-header">
-            <h2>Portfolio</h2>
+            <h2>About Me</h2>
         </div>
 
         <div class="about-container">
@@ -69,8 +70,65 @@
                 <p class="about-text">
                     Fotografi bagi saya bukan sekadar hobi, tetapi juga cara untuk melihat dunia dengan perspektif yang lebih dalam. Saya terus belajar mengasah keterampilan, mengeksplorasi teknik baru, dan mencari inspirasi dari berbagai situasi di sekitar. Melalui setiap jepretan, saya ingin menyampaikan keindahan dan dinamika kehidupan yang sering terlewatkan oleh mata biasa.
                 </p>
-            
+            </div>
+        </div>
     </section>
+
+    <section id="purchase" class="purchase">
+        <div class="section-header">
+            <h2>Foto Tanpa Watermark</h2>
+        </div>
+        <div class="purchase-container">
+            <div class="purchase-info">
+                <h3 class="purchase-title">Dapatkan Foto Kualitas Tinggi</h3>
+                <p class="purchase-description">
+                    Tertarik dengan hasil karya saya? Anda dapat mengakses dan membeli foto tanpa watermark dengan kualitas tinggi melalui Google Drive saya.
+                </p>
+                
+                <div class="drive-access">
+                    <div class="drive-box">
+                        <i class="fab fa-google-drive drive-icon"></i>
+                        <h4>Akses Google Drive</h4>
+                        <p>Klik tombol di bawah untuk melihat koleksi foto saya yang tersedia untuk dibeli tanpa watermark.</p>
+                        <a href="https://drive.google.com/drive/folders/1CcUTLzxX3ZBZuINfjIq2VKAJE44bnn28?usp=sharing" target="_blank" class="drive-btn">Lihat Koleksi <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="purchase-instructions">
+                    <h4><i class="fas fa-info-circle"></i> Cara Pembelian:</h4>
+                    <ol>
+                        <li>Buka link Google Drive di atas</li>
+                        <li>Pilih foto yang ingin Anda beli</li>
+                        <li>Catat kode foto/screenshoot ss (nama file)</li>
+                        <li>Hubungi saya melalui WhatsApp dengan menyebutkan kode foto atau sertakan screenshoot</li>
+                        <li>Lakukan pembayaran sesuai ketentuan</li>
+                        <li>Saya akan memberikan akses penuh ke file resolusi tinggi tanpa watermark</li>
+                    </ol>
+                </div>
+                
+                <div class="pricing-info">
+                    <h4><i class="fas fa-tag"></i> Harga:</h4>
+                    <ul>
+                        <li><strong>Foto Mentahan:</strong> Rp 5.000-10.000/foto</li>
+                        <li><strong>Foto Edit:</strong> Rp 5.000-15.000/foto</li>
+                        <!-- <li><strong>Paket:</strong> Rp 200.000</li>
+                        <li><strong>Paket:</strong> Rp 350.000</li> -->
+                    </ul>
+                    <p class="pricing-note">* Harga dapat berbeda untuk foto-foto khusus atau permintaan editing tambahan</p>
+                </div>
+                
+                <div class="purchase-cta">
+                    <p>Untuk pertanyaan lebih lanjut atau negosiasi khusus, silakan hubungi saya:</p>
+                    <a href="https://wa.me/6285157599264" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="section-header">
+            <h2>Portfolio</h2>
+        </div>
 
         <div class="gallery-grid">
             <div class="gallery-item">
@@ -203,11 +261,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.section-header, .gallery-grid').forEach(el => {
-            observer.observe(el);
-        });
-
-        document.querySelectorAll('.section-header, .gallery-grid, .about-container').forEach(el => {
+        document.querySelectorAll('.section-header, .gallery-grid, .about-container, .purchase-container').forEach(el => {
             observer.observe(el);
         });
     </script>
