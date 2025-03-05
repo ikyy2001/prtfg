@@ -505,19 +505,14 @@ section {
 }
 
 .about-expertise {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
 
 .expertise-item {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    transition: var(--transition);
+    padding: 20px 10px;
 }
+
 
 .expertise-item:hover {
     transform: translateY(-10px);
@@ -1098,5 +1093,23 @@ section {
     .back-to-top {
         right: 15px;
         bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .pricing-features li {
+        font-size: 13px;
     }
 }
